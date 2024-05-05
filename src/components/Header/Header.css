@@ -1,0 +1,225 @@
+.header {
+    background-image: url(https://zyan.vercel.app/images/bg/banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: 180px; */
+}
+
+.header__left {
+    max-width: 660px;
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.header__left h1 {
+    font-size: 300%;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header__left span {
+    color: #55E6A5;
+}
+
+.rightnav__top__right {
+    cursor: pointer;
+}
+
+.header__left p {
+    font-size: 80%;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #A2A2A2;
+    margin-bottom: 65px;
+}
+
+.header__left__btns {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__left__btns a {
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.header__left__btn_play i {
+    color: #55E6A5;
+    font-size: 50px;
+}
+
+.header__left__btn_play {
+    color: white;
+}
+
+.containerForHeader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.header__right .img {
+    position: relative;
+    width: 456px;
+    height: 515px;
+}
+
+.header__right .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__right .img::after {
+    position: absolute;
+    content: "";
+    background: url(/public/images/banner_shape.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 526px;
+    height: 585px;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    z-index: 2;
+    animation: bannerAnimi1 linear 1s infinite alternate;
+    -webkit-animation: bannerAnimi1 linear 1s infinite alternate;
+    overflow: visible;
+}
+
+@keyframes bannerAnimi1 {
+    from {
+        bottom: 51%;
+    }
+
+    to {
+        bottom: 50%;
+    }
+}
+
+/* Ваш CSS */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.cd-words-wrapper {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.cd-word {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInOut 8s infinite;
+}
+
+.job-container {
+    font-size: 60px;
+    color: #55e6a5;
+    position: relative;
+    height: 60px;
+    display: inline-block;
+}
+
+.current-job {
+    position: absolute;
+    padding-left: 15px;
+    animation-delay: 2s;
+    animation: cd-rotate-1-out 0.8s;
+}
+
+
+@keyframes cd-rotate-1-out {
+    0% {
+        -webkit-transform: rotateX(180deg);
+        opacity: 0
+    }
+
+    40% {
+        opacity: 0.5
+    }
+
+    80% {
+        -webkit-transform: rotateX(0);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: rotateX(-40deg);
+        opacity: 1
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .header__right .img {
+        position: relative;
+        width: 381px;
+        height: 430px;
+    }
+
+    .header__right .img::after {
+        width: 450px;
+        height: 500px;
+
+    }
+
+    .header__left {
+        max-width: 546px;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    .header__right  {
+        display: none;
+    }
+} 
+
+@media screen and (max-width:990px){
+    .header__right  {
+        display: none;
+    }
+    .header__left {
+        max-width: 696px;
+    }
+
+} 
+

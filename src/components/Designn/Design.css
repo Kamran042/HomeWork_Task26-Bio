@@ -1,0 +1,106 @@
+.design__box{
+    padding: 135px 0 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.design__box__left,
+.design__box__right{
+    max-width: 660px;
+}
+
+.design__box__left h5{
+    font-size: 640%;
+    color: white;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.design__box__left h5 span{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: unset;
+}
+
+.design__box__left p{
+    margin: 40px 0 20px;
+}
+
+.design__box__left__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.design__box__left__cards_card{
+    width: 306px;
+    background-color: #09101A;
+    height: 273px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.design__box__left__cards_card h5{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.design__box__left__cards_card span{
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    color: white;
+}
+
+.design__box__left__cards_card svg{
+    width: 100px;
+    height: 80px;
+}
+
+.design__box__right{
+    background-color: #09101A;
+    padding: 60px;
+}
+
+.design__box__right h6{
+    font-size: 200%;
+    text-align: start;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.design__box__right input,
+.design__box__right textarea{
+    width: 100%;    
+    margin-top: 30px;
+    background: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #55E6A5 ;
+    padding: 22px 20px;
+    outline: none;
+}
+
+.design__box__right textarea{
+    height: 141px;
+    margin-bottom: 25px;
+}
+
+.design__box__right input::placeholder,
+.design__box__right textarea::placeholder{
+    color: #A2A2A2;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}

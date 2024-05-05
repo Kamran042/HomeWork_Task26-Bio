@@ -1,0 +1,117 @@
+.myBlog{
+    padding: 125px 0 225px;
+}
+
+.myBlog__top{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 194px;
+}
+
+.myBlog__top__left{
+    max-width: 800px;
+}
+
+.myBlog__top__left h3,
+.myBlog__top__left h2{
+    text-align:start !important;
+}
+
+.myBlog__box{
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myBlog__box__card{
+    width: 416px;
+    height: 380px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.myBlog__box__card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all linear 0.3s;
+}
+
+.myBlog__box__card img:hover{
+    transform: scale(1.1);
+}
+
+.myBlog__box__card__tittle{
+    padding: 30px;
+    background-color: #09101A;
+    width: 375px;
+    height: 169px;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -100px;
+    color: white;
+}
+
+.myBlog__box__card__tittle__top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0 10px;
+}
+
+.myBlog__box__card__tittle__top__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.myBlog__box__card__tittle__top__card i{ 
+    color: #55E6A5;
+}
+
+.myBlog__box__card__tittle__top__card h5{
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.myBlog__box__card__tittle h6{
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.myBlog__box__card__tittle_top_continer{
+    width: 200px;
+    height: 53px;
+    padding: 13px 17px;
+    position: absolute;
+    background-color: #55E6A5;
+    z-index: 20;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.myBlog__box__card__tittle_top_continer p{
+    font-size: 80%;
+    color: black !important;
+    text-align: center;
+}
+
+.myBlog__box__card_out{
+    position: relative;
+}
+
+.myBlog__box__card_out__flex{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
