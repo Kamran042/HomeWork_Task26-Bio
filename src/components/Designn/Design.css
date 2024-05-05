@@ -1,7 +1,7 @@
 .design__box{
     padding: 135px 0 120px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 24px;
     /* flex-wrap: wrap; */
     align-items: center;
