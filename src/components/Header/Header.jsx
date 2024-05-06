@@ -12,7 +12,7 @@ const Header = () => {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [jobs.length]);
 
   return (
     <div className="header">
@@ -20,7 +20,7 @@ const Header = () => {
         <div className="header__left">
           <h1>
             Hi, I'm KAMRAN! Creative
-            <span className="job-conatiner">
+            <span className="job-container">
               <span key={currentJobIndex} className="job current-job">
                 {jobs[currentJobIndex]}
               </span>
@@ -37,7 +37,7 @@ const Header = () => {
             <Button>
               Download Cv <i className="fa-solid fa-download"></i>
             </Button>
-            <a className="header__left__btn_play" href="#">
+            <a className="header__left__btn_play" href="./index.html">
               <i className="fa-solid fa-circle-play"></i> Watch the Video
             </a>
           </div>
