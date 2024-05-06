@@ -87,6 +87,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    clip-path: polygon(50% 0, 99% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 .header__right .img::after {
