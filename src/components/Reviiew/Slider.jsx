@@ -1,18 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 function AutoPlayMethods() {
-  let  sliderRef = useRef(null);
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "none"}}
-        onClick={onClick}
-      />
-    );
-  }
+  const SamplePrevArrow = ({ className, style, onClick }) => (
+    <div
+      className={className}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
 
   const settings = {
     slidesToShow: 2,
@@ -22,18 +18,17 @@ function AutoPlayMethods() {
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SamplePrevArrow />
   };
+
   return (
     <div className="slider-container slider_xz">
-      <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
+      <Slider {...settings}>
         <div className="slider__card">
           <div className="slider__top">
             <div className="slider__top__left">
               <div className="slider__top__left__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                {[...Array(5)].map((_, index) => (
+                  <i key={index} className="fa-solid fa-star"></i>
+                ))}
               </div>
               <h5>Eleanor pena</h5>
               <h6>Marketing Coordinator</h6>
@@ -62,11 +57,9 @@ function AutoPlayMethods() {
           <div className="slider__top">
             <div className="slider__top__left">
               <div className="slider__top__left__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                {[...Array(5)].map((_, index) => (
+                  <i key={index} className="fa-solid fa-star"></i>
+                ))}
               </div>
               <h5>Eleanor pena</h5>
               <h6>Marketing Coordinator</h6>
@@ -95,11 +88,9 @@ function AutoPlayMethods() {
           <div className="slider__top">
             <div className="slider__top__left">
               <div className="slider__top__left__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                {[...Array(5)].map((_, index) => (
+                  <i key={index} className="fa-solid fa-star"></i>
+                ))}
               </div>
               <h5>Eleanor pena</h5>
               <h6>Marketing Coordinator</h6>
@@ -128,11 +119,9 @@ function AutoPlayMethods() {
           <div className="slider__top">
             <div className="slider__top__left">
               <div className="slider__top__left__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                {[...Array(5)].map((_, index) => (
+                  <i key={index} className="fa-solid fa-star"></i>
+                ))}
               </div>
               <h5>Eleanor pena</h5>
               <h6>Marketing Coordinator</h6>
@@ -161,4 +150,5 @@ function AutoPlayMethods() {
     </div>
   );
 }
+
 export default AutoPlayMethods;
