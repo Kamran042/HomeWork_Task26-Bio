@@ -115,3 +115,10 @@
     
     
 }
+@media screen and (max-width:500px) {
+    .navbar{
+        max-width: 320px;
+    }
+    
+    
+}

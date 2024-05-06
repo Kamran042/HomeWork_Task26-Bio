@@ -85,3 +85,12 @@
     width: 70%;
     background-color: #55E6A5;
 }
+
+@media screen and (max-width:500px) {
+    .education__progrDil__card{
+        height: 113px;
+        max-width: 296px;
+        padding: 0 12px;
+    }
+    
+}

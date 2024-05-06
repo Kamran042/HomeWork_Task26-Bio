@@ -1,10 +1,10 @@
-.serviсes__box{
+.serviсes__box {
     padding-top: 130px;
     text-align: center;
     color: white;
 }
 
-.dark__mode h3{
+.dark__mode h3 {
     font-size: 100%;
     font-weight: 500;
     letter-spacing: 1.4px;
@@ -14,38 +14,39 @@
     color: #55E6A5;
 }
 
-.dark__mode h2{
+.dark__mode h2 {
     text-align: center;
     font-size: 240%;
     font-weight: 600;
-    color:white ;
+    color: white;
     line-height: 1.3;
 }
 
-.serviсes__box h2{
+.serviсes__box h2 {
     max-width: 700px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.serviсes__box__flex{
+.serviсes__box__flex {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 24px;
     padding-top: 62px;
-    
+
 }
 
-.serviсes__box__flex__card{
+.serviсes__box__flex__card {
     width: 416px;
     padding: 105px 40px 40px 40px;
     position: relative;
     border: 3px solid #191919;
+    transition: all 0.3s ease;
 }
 
-.dark__mode h4{
+.dark__mode h4 {
     font-size: 100%;
     font-weight: 500;
     text-align: center;
@@ -54,7 +55,7 @@
     letter-spacing: 1px;
 }
 
-.dark__mode p{
+.dark__mode p {
     color: #A2A2A2;
     font-size: 80%;
     font-weight: 500;
@@ -66,4 +67,38 @@
     top: -45px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width:1402px) {
+    .serviсes__box__flex__card {
+        width: 356px;
+        padding: 105px 30px 30px 30px;
+
+    }
+}
+
+@media screen and (max-width:1230px) {
+    .serviсes__box__flex__card {
+        width: 296px;
+        padding: 105px 20px 20px 20px;
+
+    }
+
+    .dark__mode h2 {
+        font-size: 190%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .serviсes__box__flex__card {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:760px) {
+    .serviсes__box__flex__card {
+        width: 100%;
+    }
+
 }
