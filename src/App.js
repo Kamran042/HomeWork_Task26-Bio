@@ -11,6 +11,7 @@ import Newsletter from "./components/Newsletter/Newsletter";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Review from "./components/Reviiew/Review";
 import RightNav from "./components/RightNav/RightNav";
+import ProgressBar from "./components/ScrolButton";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
+      <ProgressBar/>
     </>
   );
 }
